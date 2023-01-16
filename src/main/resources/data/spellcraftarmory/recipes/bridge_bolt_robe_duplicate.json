@@ -1,0 +1,19 @@
+{
+  "type": "spellcraftarmory:sewing",
+  "ingredients": [
+    {
+      "item": "minecraft:big_dripleaf",
+      "count": 4
+    },
+    {
+      "item": "spellcraftarmory:spell_cloth",
+      "count": 8
+    },
+    {
+      "item": "spellcraftarmory:bridge_bolt_robe"
+    }
+  ],
+  "output": {
+    "item": "spellcraftarmory:bridge_bolt_robe"
+  }
+}

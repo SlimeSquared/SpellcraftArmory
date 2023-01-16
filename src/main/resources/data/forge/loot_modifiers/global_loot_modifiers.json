@@ -1,0 +1,23 @@
+{
+  "replace": false,
+  "entries": [
+    "spellcraftarmory:animal_heal_robe_in_village_shepherd",
+    "spellcraftarmory:blinding_hat_in_simple_dungeon",
+    "spellcraftarmory:bloodlust_hat_in_pillager_outpost",
+    "spellcraftarmory:bridge_bolt_robe_in_village_plains_house",
+    "spellcraftarmory:cooldown_robe_in_igloo_chest",
+    "spellcraftarmory:explosion_leggings_in_nether_bridge",
+    "spellcraftarmory:ghost_horse_robe_in_village_tannery",
+    "spellcraftarmory:lava_charm_leggings_in_ruined_portal",
+    "spellcraftarmory:light_heal_robe_in_desert_pyramid",
+    "spellcraftarmory:lightning_hat_in_stronghold_library",
+    "spellcraftarmory:minecart_boots_in_abandoned_mineshaft",
+    "spellcraftarmory:moderate_fall_boots_in_village_armorer",
+    "spellcraftarmory:petrification_hat_in_jungle_temple",
+    "spellcraftarmory:recoil_robe_in_woodland_mansion",
+    "spellcraftarmory:silence_leggings_in_ancient_city",
+    "spellcraftarmory:teleport_hat_in_stronghold_corridor",
+    "spellcraftarmory:teleport_leggings_in_end_city",
+    "spellcraftarmory:unstoppable_boots_in_village_mason"
+  ]
+}

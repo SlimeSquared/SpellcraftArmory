@@ -1,0 +1,18 @@
+{
+  "type": "spellcraftarmory:sewing",
+  "ingredients": [
+    {
+      "item": "minecraft:creeper_head"
+    },
+    {
+      "item": "spellcraftarmory:spell_cloth",
+      "count": 7
+    },
+    {
+      "item": "minecraft:leather_leggings"
+    }
+  ],
+  "output": {
+    "item": "spellcraftarmory:creeper_rune_leggings"
+  }
+}

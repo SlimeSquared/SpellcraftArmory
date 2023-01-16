@@ -1,0 +1,18 @@
+{
+  "type": "spellcraftarmory:sewing",
+  "ingredients": [
+    {
+      "item": "minecraft:lightning_rod"
+    },
+    {
+      "item": "spellcraftarmory:spell_cloth",
+      "count": 5
+    },
+    {
+      "item": "spellcraftarmory:lightning_hat"
+    }
+  ],
+  "output": {
+    "item": "spellcraftarmory:lightning_hat"
+  }
+}

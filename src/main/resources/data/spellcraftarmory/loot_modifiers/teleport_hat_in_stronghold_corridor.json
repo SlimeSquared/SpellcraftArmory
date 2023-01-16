@@ -1,0 +1,10 @@
+{
+  "type": "spellcraftarmory:add_medium_item",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:chests/stronghold_corridor"
+    }
+  ],
+  "item": "spellcraftarmory:teleport_hat"
+}

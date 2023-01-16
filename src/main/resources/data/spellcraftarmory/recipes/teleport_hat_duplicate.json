@@ -1,0 +1,19 @@
+{
+  "type": "spellcraftarmory:sewing",
+  "ingredients": [
+    {
+      "item": "minecraft:ender_pearl",
+      "count": 8
+    },
+    {
+      "item": "spellcraftarmory:spell_cloth",
+      "count": 5
+    },
+    {
+      "item": "spellcraftarmory:teleport_hat"
+    }
+  ],
+  "output": {
+    "item": "spellcraftarmory:teleport_hat"
+  }
+}

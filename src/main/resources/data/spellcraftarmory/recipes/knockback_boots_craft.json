@@ -1,0 +1,19 @@
+{
+  "type": "spellcraftarmory:sewing",
+  "ingredients": [
+    {
+      "item": "minecraft:piston",
+      "count": 2
+    },
+    {
+      "item": "spellcraftarmory:spell_cloth",
+      "count": 4
+    },
+    {
+      "item": "minecraft:leather_boots"
+    }
+  ],
+  "output": {
+    "item": "spellcraftarmory:knockback_boots"
+  }
+}

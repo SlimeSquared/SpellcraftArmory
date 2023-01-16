@@ -1,0 +1,18 @@
+{
+  "type": "spellcraftarmory:sewing",
+  "ingredients": [
+    {
+      "item": "minecraft:sunflower"
+    },
+    {
+      "item": "spellcraftarmory:spell_cloth",
+      "count": 8
+    },
+    {
+      "item": "spellcraftarmory:light_heal_robe"
+    }
+  ],
+  "output": {
+    "item": "spellcraftarmory:light_heal_robe"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "spellcraftarmory:sewing",
+  "ingredients": [
+    {
+      "item": "minecraft:diamond"
+    },
+    {
+      "item": "spellcraftarmory:spell_cloth",
+      "count": 7
+    },
+    {
+      "item": "spellcraftarmory:silence_rune_leggings"
+    }
+  ],
+  "output": {
+    "item": "spellcraftarmory:silence_rune_leggings"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "spellcraftarmory:sewing",
+  "ingredients": [
+    {
+      "item": "minecraft:anvil"
+    },
+    {
+      "item": "spellcraftarmory:spell_cloth",
+      "count": 4
+    },
+    {
+      "item": "spellcraftarmory:unstoppable_boots"
+    }
+  ],
+  "output": {
+    "item": "spellcraftarmory:unstoppable_boots"
+  }
+}

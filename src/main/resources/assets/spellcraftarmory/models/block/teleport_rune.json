@@ -1,0 +1,6 @@
+{
+  "parent": "spellcraftarmory:block/rune",
+  "textures": {
+    "texture": "spellcraftarmory:block/teleport_rune"
+  }
+}

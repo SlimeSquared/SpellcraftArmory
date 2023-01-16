@@ -1,0 +1,19 @@
+{
+  "type": "spellcraftarmory:sewing",
+  "ingredients": [
+    {
+      "item": "minecraft:chorus_fruit",
+      "count": 8
+    },
+    {
+      "item": "spellcraftarmory:spell_cloth",
+      "count": 7
+    },
+    {
+      "item": "spellcraftarmory:teleport_rune_leggings"
+    }
+  ],
+  "output": {
+    "item": "spellcraftarmory:teleport_rune_leggings"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "spellcraftarmory:sewing",
+  "ingredients": [
+    {
+      "item": "minecraft:tnt",
+      "count": 8
+    },
+    {
+      "item": "spellcraftarmory:spell_cloth",
+      "count": 7
+    },
+    {
+      "item": "spellcraftarmory:explosion_rune_leggings"
+    }
+  ],
+  "output": {
+    "item": "spellcraftarmory:explosion_rune_leggings"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "spellcraftarmory:add_rare_item",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:chests/ruined_portal"
+    }
+  ],
+  "item": "spellcraftarmory:lava_charm_leggings"
+}

@@ -1,0 +1,61 @@
+{
+  "variants": {
+    "face=ceiling,facing=north": {
+      "model": "spellcraftarmory:block/blank_rune",
+      "x": 180
+    },
+    "face=ceiling,facing=east": {
+      "model": "spellcraftarmory:block/blank_rune",
+      "x": 180,
+      "y": 90
+    },
+    "face=ceiling,facing=south": {
+      "model": "spellcraftarmory:block/blank_rune",
+      "x": 180,
+      "y": 180
+    },
+    "face=ceiling,facing=west": {
+      "model": "spellcraftarmory:block/blank_rune",
+      "x": 180,
+      "y": 270
+    },
+    "face=floor,facing=north": {
+      "model": "spellcraftarmory:block/blank_rune"
+    },
+    "face=floor,facing=east": {
+      "model": "spellcraftarmory:block/blank_rune",
+      "y": 90
+    },
+    "face=floor,facing=south": {
+      "model": "spellcraftarmory:block/blank_rune",
+      "y": 180
+    },
+    "face=floor,facing=west": {
+      "model": "spellcraftarmory:block/blank_rune",
+      "y": 270
+    },
+    "face=wall,facing=east": {
+      "model": "spellcraftarmory:block/blank_rune",
+      "uvlock": true,
+      "x": 90,
+      "y": 90
+    },
+    "face=wall,facing=north": {
+      "model": "spellcraftarmory:block/blank_rune",
+      "uvlock": true,
+      "x": 90
+    },
+    "face=wall,facing=south": {
+      "model": "spellcraftarmory:block/blank_rune",
+      "uvlock": true,
+      "x": 90,
+      "y": 180
+    },
+    "face=wall,facing=west": {
+      "model": "spellcraftarmory:block/blank_rune",
+      "uvlock": true,
+      "x": 90,
+      "y": 270
+    }
+  }
+}

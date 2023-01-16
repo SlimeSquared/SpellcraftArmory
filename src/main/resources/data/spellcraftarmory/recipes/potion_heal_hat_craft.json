@@ -1,0 +1,18 @@
+{
+  "type": "spellcraftarmory:sewing",
+  "ingredients": [
+    {
+      "item": "minecraft:glistering_melon"
+    },
+    {
+      "item": "spellcraftarmory:spell_cloth",
+      "count": 5
+    },
+    {
+      "item": "minecraft:leather_helmet"
+    }
+  ],
+  "output": {
+    "item": "spellcraftarmory:potion_heal_hat"
+  }
+}

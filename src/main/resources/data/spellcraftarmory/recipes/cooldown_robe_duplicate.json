@@ -1,0 +1,18 @@
+{
+  "type": "spellcraftarmory:sewing",
+  "ingredients": [
+    {
+      "item": "minecraft:clock"
+    },
+    {
+      "item": "spellcraftarmory:spell_cloth",
+      "count": 8
+    },
+    {
+      "item": "spellcraftarmory:cooldown_robe"
+    }
+  ],
+  "output": {
+    "item": "spellcraftarmory:cooldown_robe"
+  }
+}

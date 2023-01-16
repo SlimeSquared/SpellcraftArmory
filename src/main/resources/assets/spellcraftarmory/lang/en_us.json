@@ -1,0 +1,46 @@
+{
+  "itemGroup.spellcraftarmorytab": "Spellcraft Armory",
+  "item.spellcraftarmory.primary_wand": "Primary Staff",
+  "item.spellcraftarmory.secondary_wand": "Secondary Wand",
+  "item.spellcraftarmory.rune_wand": "Rune Sceptre",
+  "item.spellcraftarmory.rune_chalk": "Rune Chalk",
+  "item.spellcraftarmory.spell_cloth": "Aurum Cloth",
+  "block.spellcraftarmory.sewing_table": "Sewing Table",
+
+  "item.spellcraftarmory.petrification_hat": "Petrifying Cowl",
+  "item.spellcraftarmory.blinding_hat": "Blinding Hat",
+  "item.spellcraftarmory.potion_heal_hat": "Witch's Hat",
+  "item.spellcraftarmory.teleport_hat": "Hat of Teleportation",
+  "item.spellcraftarmory.cracking_hat": "Hat of Cracking",
+  "item.spellcraftarmory.light_bolt_hat": "Crown of Light",
+  "item.spellcraftarmory.bloodlust_hat": "Bloodlust Cap",
+  "item.spellcraftarmory.lightning_hat": "Cowl of Storms",
+
+  "item.spellcraftarmory.curse_robe": "Witch's Robe",
+  "item.spellcraftarmory.cooldown_robe": "Stunning Robe",
+  "item.spellcraftarmory.recoil_robe": "Recoil Shirt",
+  "item.spellcraftarmory.mossy_robe": "Mossy Robe",
+  "item.spellcraftarmory.light_heal_robe": "Photosynthesizing Robe",
+  "item.spellcraftarmory.light_block_robe": "Robe of Light",
+  "item.spellcraftarmory.bridge_bolt_robe": "Robe of Bridging",
+  "item.spellcraftarmory.animal_heal_robe": "Robe of the Pack",
+  "item.spellcraftarmory.ghost_horse_robe": "Ghostly Coat",
+  "item.spellcraftarmory.speed_robe": "Robe of Speed",
+
+  "item.spellcraftarmory.creeper_rune_leggings": "Creeper Rune Leggings",
+  "item.spellcraftarmory.explosion_rune_leggings": "Leggings of Explosions",
+  "item.spellcraftarmory.silence_rune_leggings": "Leggings of Negation",
+  "item.spellcraftarmory.teleport_rune_leggings": "Leggings of Teleportation",
+  "item.spellcraftarmory.lava_charm_leggings": "Lava Strider Leggings",
+
+  "item.spellcraftarmory.jump_boots": "Boots of Leaping",
+  "item.spellcraftarmory.ice_boots": "Ice Slippers",
+  "item.spellcraftarmory.knockback_boots": "Titan's Boots",
+  "item.spellcraftarmory.unstoppable_boots": "Boots of Momentum",
+  "item.spellcraftarmory.moderate_fall_boots": "Moderate Fall Boots",
+  "item.spellcraftarmory.minecart_boots": "Minecart Boots",
+
+  "effect.spellcraftarmory.curse": "Curse",
+  "effect.spellcraftarmory.petrify": "Petrification",
+  "effect.spellcraftarmory.silence": "Silence"
+}

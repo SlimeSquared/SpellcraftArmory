@@ -1,0 +1,19 @@
+{
+  "type": "spellcraftarmory:sewing",
+  "ingredients": [
+    {
+      "item": "minecraft:magma_cream",
+      "count": 8
+    },
+    {
+      "item": "spellcraftarmory:spell_cloth",
+      "count": 7
+    },
+    {
+      "item": "spellcraftarmory:lava_charm_leggings"
+    }
+  ],
+  "output": {
+    "item": "spellcraftarmory:lava_charm_leggings"
+  }
+}

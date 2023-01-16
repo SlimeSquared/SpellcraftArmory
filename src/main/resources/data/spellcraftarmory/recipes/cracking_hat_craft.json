@@ -1,0 +1,19 @@
+{
+  "type": "spellcraftarmory:sewing",
+  "ingredients": [
+    {
+      "item": "minecraft:cracked_stone_bricks",
+      "count": 4
+    },
+    {
+      "item": "spellcraftarmory:spell_cloth",
+      "count": 5
+    },
+    {
+      "item": "minecraft:leather_helmet"
+    }
+  ],
+  "output": {
+    "item": "spellcraftarmory:cracking_hat"
+  }
+}

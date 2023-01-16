@@ -1,0 +1,19 @@
+{
+  "type": "spellcraftarmory:sewing",
+  "ingredients": [
+    {
+      "item": "minecraft:rabbit_foot",
+      "count": 4
+    },
+    {
+      "item": "spellcraftarmory:spell_cloth",
+      "count": 4
+    },
+    {
+      "item": "minecraft:leather_boots"
+    }
+  ],
+  "output": {
+    "item": "spellcraftarmory:jump_boots"
+  }
+}

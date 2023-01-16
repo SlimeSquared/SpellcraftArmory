@@ -1,0 +1,19 @@
+{
+  "type": "spellcraftarmory:sewing",
+  "ingredients": [
+    {
+      "item": "minecraft:powered_rail",
+      "count": 6
+    },
+    {
+      "item": "spellcraftarmory:spell_cloth",
+      "count": 4
+    },
+    {
+      "item": "spellcraftarmory:minecart_boots"
+    }
+  ],
+  "output": {
+    "item": "spellcraftarmory:minecart_boots"
+  }
+}

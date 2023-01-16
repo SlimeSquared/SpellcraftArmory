@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "package": "com.slimesquared.spellcraftarmory.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "MixinAbstractMinecart",
+    "MixinEntity",
+    "MixinLivingEntity"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "refmap": "spellcraftarmory.mixin-refmap.json"
+}

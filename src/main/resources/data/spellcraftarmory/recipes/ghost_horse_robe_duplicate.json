@@ -1,0 +1,19 @@
+{
+  "type": "spellcraftarmory:sewing",
+  "ingredients": [
+    {
+      "item": "minecraft:golden_carrot",
+      "count": 4
+    },
+    {
+      "item": "spellcraftarmory:spell_cloth",
+      "count": 8
+    },
+    {
+      "item": "spellcraftarmory:ghost_horse_robe"
+    }
+  ],
+  "output": {
+    "item": "spellcraftarmory:ghost_horse_robe"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "spellcraftarmory:sewing",
+  "ingredients": [
+    {
+      "item": "minecraft:ink_sac",
+      "count": 8
+    },
+    {
+      "item": "spellcraftarmory:spell_cloth",
+      "count": 5
+    },
+    {
+      "item": "spellcraftarmory:blinding_hat"
+    }
+  ],
+  "output": {
+    "item": "spellcraftarmory:blinding_hat"
+  }
+}

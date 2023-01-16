@@ -1,0 +1,19 @@
+{
+  "type": "spellcraftarmory:sewing",
+  "ingredients": [
+    {
+      "item": "minecraft:blaze_powder",
+      "count": 8
+    },
+    {
+      "item": "spellcraftarmory:spell_cloth",
+      "count": 5
+    },
+    {
+      "item": "spellcraftarmory:bloodlust_hat"
+    }
+  ],
+  "output": {
+    "item": "spellcraftarmory:bloodlust_hat"
+  }
+}

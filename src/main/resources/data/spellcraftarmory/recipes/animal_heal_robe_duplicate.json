@@ -1,0 +1,19 @@
+{
+  "type": "spellcraftarmory:sewing",
+  "ingredients": [
+    {
+      "item": "minecraft:bone",
+      "count": 16
+    },
+    {
+      "item": "spellcraftarmory:spell_cloth",
+      "count": 8
+    },
+    {
+      "item": "spellcraftarmory:animal_heal_robe"
+    }
+  ],
+  "output": {
+    "item": "spellcraftarmory:animal_heal_robe"
+  }
+}
