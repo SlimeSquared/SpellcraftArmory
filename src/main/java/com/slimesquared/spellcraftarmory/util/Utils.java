@@ -2,7 +2,6 @@ package com.slimesquared.spellcraftarmory.util;
 
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectInstance;
-import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.ai.targeting.TargetingConditions;
 import net.minecraft.world.level.ClipContext;
@@ -38,9 +37,5 @@ public class Utils {
         Vec3 start = sourceEntity.getEyePosition();
         Vec3 end = start.add(sourceEntity.getLookAngle().normalize().scale(distance));
         return sourceEntity.level.clip(new ClipContext(start, end, ClipContext.Block.COLLIDER, fluidInteraction, sourceEntity));
-    }
-
-    public static void readEntityData(Entity entity) {
-        System.out.println(entity);
     }
 }
