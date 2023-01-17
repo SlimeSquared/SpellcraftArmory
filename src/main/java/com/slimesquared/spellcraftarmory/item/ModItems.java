@@ -48,7 +48,6 @@ public class ModItems {
     //ToDo Models: horse, light particles
 
     //ToDo: mixins working when "./gradlew build" to jar, but not in runClient
-    // make recipe work with JEI
 
     //Make sure to add recipe json, loot modifier json (+add to global loot modifier), item json+texture, and armor texture
     public static final RegistryObject<Item> PETRIFICATION_HAT = ITEMS.register("petrification_hat", () ->

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "/C",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "tag": "minecraft:planks"
+    },
+    "/": {
+      "item": "minecraft:stick"
+    },
+    "C": {
+      "item": "spellcraftarmory:spell_cloth"
+    }
+  },
+  "result": {
+    "item": "spellcraftarmory:sewing_table"
+  }
+}

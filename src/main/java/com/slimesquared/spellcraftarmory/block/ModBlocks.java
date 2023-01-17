@@ -12,8 +12,9 @@ import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.crafting.RecipeType;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
@@ -23,6 +24,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import org.jetbrains.annotations.Nullable;
 
 import java.util.function.Supplier;
 
@@ -33,14 +35,19 @@ public class ModBlocks {
         BLOCKS.register(e);
     }
 
-    private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {
+    private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab, Integer burnTime) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
-        registerBlockItem(name, toReturn, tab);
+        registerBlockItem(name, toReturn, tab, burnTime);
         return toReturn;
     }
 
-    private static <T extends Block> RegistryObject<Item> registerBlockItem(String name, RegistryObject<T> block, CreativeModeTab tab) {
-        return ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
+    private static <T extends Block> RegistryObject<Item> registerBlockItem(String name, RegistryObject<T> block, CreativeModeTab tab, Integer burnTime) {
+        return ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties().tab(tab)) {
+                    @Override
+                    public int getBurnTime(ItemStack itemStack, @Nullable RecipeType<?> recipeType) {
+                        return burnTime != null ? burnTime : super.getBurnTime(itemStack, recipeType);
+                    }
+        });
     }
 
     public static void setRendering() {
@@ -57,22 +64,22 @@ public class ModBlocks {
     }
 
     public static final RegistryObject<Block> LIGHT_SPELL = registerBlock("light_spell_block", () ->
-            new LightSpellBlock(BlockBehaviour.Properties.of(Material.FIRE).instabreak().noCollission().lightLevel((light) -> 15)), null);
+            new LightSpellBlock(BlockBehaviour.Properties.of(Material.FIRE).instabreak().noCollission().lightLevel((light) -> 15)), null, null);
     public static final RegistryObject<Block> SPECTRAL_BLOCK = registerBlock("spectral_block", () ->
             new SpectralBlock(BlockBehaviour.Properties.of(new Material(MaterialColor.NONE, false, false, true, false, false, false, PushReaction.DESTROY))
-                    .isSuffocating((a, b, c) -> false).instabreak().noOcclusion().lightLevel((light) -> 4)), null);
+                    .isSuffocating((a, b, c) -> false).instabreak().noOcclusion().lightLevel((light) -> 4)), null, null);
     public static final RegistryObject<Block> SEWING_TABLE = registerBlock("sewing_table", () ->
-            new SewingTableBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(2.5F).sound(SoundType.WOOD).noOcclusion()), ModCreativeModeTab.MOD_TAB);
+            new SewingTableBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(2.5F).sound(SoundType.WOOD).noOcclusion()), ModCreativeModeTab.MOD_TAB, 300);
 
     //Setup rune json files, add to rendering method to cutout textures, add to ModBlockEntities list, add to chalk
     public static final RegistryObject<Block> RUNE = registerBlock("rune_block", () ->
-            new GenericRuneBlock(BlockBehaviour.Properties.of(Material.DECORATION).instabreak().noCollission()), null);
+            new GenericRuneBlock(BlockBehaviour.Properties.of(Material.DECORATION).instabreak().noCollission()), null, null);
     public static final RegistryObject<Block> CREEPER_RUNE = registerBlock("creeper_rune_block", () ->
-            new CreeperSoundRune(BlockBehaviour.Properties.of(Material.DECORATION).instabreak().noCollission()), null);
+            new CreeperSoundRune(BlockBehaviour.Properties.of(Material.DECORATION).instabreak().noCollission()), null, null);
     public static final RegistryObject<Block> EXPLODE_RUNE = registerBlock("explode_rune_block", () ->
-            new ExplodeRune(BlockBehaviour.Properties.of(Material.DECORATION).instabreak().noCollission()), null);
+            new ExplodeRune(BlockBehaviour.Properties.of(Material.DECORATION).instabreak().noCollission()), null, null);
     public static final RegistryObject<Block> SILENCE_RUNE = registerBlock("silence_rune_block", () ->
-            new SilenceRune(BlockBehaviour.Properties.of(Material.DECORATION).instabreak().noCollission()), null);
+            new SilenceRune(BlockBehaviour.Properties.of(Material.DECORATION).instabreak().noCollission()), null, null);
     public static final RegistryObject<Block> TELEPORT_RUNE = registerBlock("teleport_rune_block", () ->
-            new TeleportRune(BlockBehaviour.Properties.of(Material.DECORATION).instabreak().noCollission()), null);
+            new TeleportRune(BlockBehaviour.Properties.of(Material.DECORATION).instabreak().noCollission()), null, null);
 }
