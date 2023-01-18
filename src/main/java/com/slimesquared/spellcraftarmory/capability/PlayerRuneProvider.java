@@ -1,4 +1,4 @@
-package com.slimesquared.spellcraftarmory.runecapability;
+package com.slimesquared.spellcraftarmory.capability;
 
 import net.minecraft.core.Direction;
 import net.minecraft.nbt.CompoundTag;

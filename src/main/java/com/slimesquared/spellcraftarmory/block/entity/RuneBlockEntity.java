@@ -2,7 +2,7 @@ package com.slimesquared.spellcraftarmory.block.entity;
 
 import com.slimesquared.spellcraftarmory.block.GenericRuneBlock;
 import com.slimesquared.spellcraftarmory.block.ModBlocks;
-import com.slimesquared.spellcraftarmory.runecapability.PlayerRuneProvider;
+import com.slimesquared.spellcraftarmory.capability.PlayerRuneProvider;
 import com.slimesquared.spellcraftarmory.util.RuneSpells;
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;

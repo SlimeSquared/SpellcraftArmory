@@ -1,18 +1,13 @@
-package com.slimesquared.spellcraftarmory.runecapability;
+package com.slimesquared.spellcraftarmory.capability;
 
-import com.mojang.serialization.JsonOps;
 import com.slimesquared.spellcraftarmory.block.GenericRuneBlock;
 import com.slimesquared.spellcraftarmory.util.RuneSpells;
 import net.minecraft.core.BlockPos;
-import net.minecraft.core.Registry;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.nbt.NbtOps;
-import net.minecraft.nbt.Tag;
 import net.minecraft.resources.ResourceKey;
-import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.block.Blocks;
 import oshi.annotation.concurrent.Immutable;
 
 import java.util.HashMap;

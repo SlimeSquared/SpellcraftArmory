@@ -1,6 +1,7 @@
 package com.slimesquared.spellcraftarmory.event;
 
 import com.slimesquared.spellcraftarmory.SpellcraftArmory;
+import com.slimesquared.spellcraftarmory.capability.PlayerSpellCooldownProvider;
 import com.slimesquared.spellcraftarmory.effect.ModEffects;
 import com.slimesquared.spellcraftarmory.entity.ModEntityTypes;
 import com.slimesquared.spellcraftarmory.entity.client.GhostHorseModel;
@@ -15,7 +16,7 @@ import com.slimesquared.spellcraftarmory.particle.ModParticles;
 import com.slimesquared.spellcraftarmory.particle.TeleportParticles;
 import com.slimesquared.spellcraftarmory.particle.runeemitter.ExplodeRuneEmitter;
 import com.slimesquared.spellcraftarmory.particle.runeemitter.TeleRuneEmitter;
-import com.slimesquared.spellcraftarmory.runecapability.PlayerRuneProvider;
+import com.slimesquared.spellcraftarmory.capability.PlayerRuneProvider;
 import com.slimesquared.spellcraftarmory.util.Spells;
 import com.slimesquared.spellcraftarmory.util.Utils;
 import net.minecraft.client.renderer.entity.EntityRenderers;
@@ -35,10 +36,12 @@ import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.client.event.RegisterParticleProvidersEvent;
 import net.minecraftforge.common.capabilities.RegisterCapabilitiesEvent;
 import net.minecraftforge.event.AttachCapabilitiesEvent;
+import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
 import net.minecraftforge.event.entity.living.*;
 import net.minecraftforge.event.entity.player.PlayerEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.LogicalSide;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.loading.FMLEnvironment;
@@ -163,7 +166,10 @@ public class ModEvents {
         public static void onAttachCapabilitiesPlayer(AttachCapabilitiesEvent<Entity> e) {
             if (e.getObject() instanceof Player player) {
                 if (!player.getCapability(PlayerRuneProvider.PLAYER_RUNES).isPresent()) {
-                    e.addCapability(new ResourceLocation(SpellcraftArmory.MOD_ID, "properties"), new PlayerRuneProvider());
+                    e.addCapability(new ResourceLocation(SpellcraftArmory.MOD_ID, "runeproperties"), new PlayerRuneProvider());
+                }
+                if (!player.getCapability(PlayerSpellCooldownProvider.PLAYER_SPELL_COOLDOWNS).isPresent()) {
+                    e.addCapability(new ResourceLocation(SpellcraftArmory.MOD_ID, "spellcooldownproperties"), new PlayerSpellCooldownProvider());
                 }
             }
         }
@@ -184,6 +190,23 @@ public class ModEvents {
         @SubscribeEvent
         public static void onRegisterCapabilities(RegisterCapabilitiesEvent e) {
             e.register(PlayerRuneProvider.class);
+            e.register(PlayerSpellCooldownProvider.class);
+        }
+
+        //decrements 40x per second
+        @SubscribeEvent
+        public static void onPlayerTick(TickEvent.PlayerTickEvent e) {
+            e.player.getCapability(PlayerSpellCooldownProvider.PLAYER_SPELL_COOLDOWNS).ifPresent((cooldowns) -> {
+                for (var spell : Spells.SpellList.values()) {
+                    var time = cooldowns.getCooldown(spell);
+                    if (time != null && time > 0) {
+                        cooldowns.setCooldown(spell, time - 1);
+                        if (spell == Spells.SpellList.Slide) {
+                            System.out.println("slide decremented: " + time);
+                        }
+                    }
+                }
+            });
         }
     }
 

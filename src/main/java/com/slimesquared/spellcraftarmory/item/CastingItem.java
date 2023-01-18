@@ -3,7 +3,7 @@ package com.slimesquared.spellcraftarmory.item;
 import com.slimesquared.spellcraftarmory.block.GenericRuneBlock;
 import com.slimesquared.spellcraftarmory.block.entity.RuneBlockEntity;
 import com.slimesquared.spellcraftarmory.effect.ModEffects;
-import com.slimesquared.spellcraftarmory.runecapability.PlayerRuneProvider;
+import com.slimesquared.spellcraftarmory.capability.PlayerRuneProvider;
 import com.slimesquared.spellcraftarmory.util.RuneSpells;
 import com.slimesquared.spellcraftarmory.util.Spells;
 import net.minecraft.sounds.SoundEvents;

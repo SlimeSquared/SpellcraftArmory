@@ -2,7 +2,7 @@ package com.slimesquared.spellcraftarmory.item;
 
 import com.slimesquared.spellcraftarmory.block.ModBlocks;
 import com.slimesquared.spellcraftarmory.block.entity.RuneBlockEntity;
-import com.slimesquared.spellcraftarmory.runecapability.PlayerRuneProvider;
+import com.slimesquared.spellcraftarmory.capability.PlayerRuneProvider;
 import com.slimesquared.spellcraftarmory.util.RuneSpells;
 import net.minecraft.advancements.CriteriaTriggers;
 import net.minecraft.core.BlockPos;

@@ -29,7 +29,7 @@ public class ModItems {
             new Item(new Item.Properties().tab(ModCreativeModeTab.MOD_TAB)));
 
     //ToDo: Dark, Druid (water/plant/air/fire)
-    // Legging passives: slippery (shift locks momentum, friction proportional to [speed - floor value]), inner tube
+    // Legging passives: inner tube
     // Boots: slime
     // generic ideas: AoE slowdown, smokescreen, defense increases/decreases on repeated damage (effect?)
     //    slow fall on sneak, fast ladders, wall climb, universal item allay
@@ -47,10 +47,9 @@ public class ModItems {
 
     //ToDo Models: horse, light particles
 
-    //ToDo: mixins working when "./gradlew build" to jar, but not in runClient
-    // optional: make JEI recipe transferring
+    //ToDo: optional: make JEI recipe transferring
 
-    //Make sure to add recipe json, loot modifier json (+add to global loot modifier), item json+texture, and armor texture
+    //Make sure to add recipe json, loot modifier json (+add to global loot modifier), item json+texture, armor texture, and lang file
     public static final RegistryObject<Item> PETRIFICATION_HAT = ITEMS.register("petrification_hat", () ->
             new SpellArmorItem(ModArmorMaterials.SPELL_CLOTH_ARMOR, EquipmentSlot.HEAD, new Item.Properties().tab(ModCreativeModeTab.MOD_TAB), 0, Spells.SpellList.Petrify, "box_helmet", "petrification_hat"));
     public static final RegistryObject<Item> BLINDING_HAT = ITEMS.register("blinding_hat", () ->
@@ -98,7 +97,7 @@ public class ModItems {
     public static final RegistryObject<Item> LAVA_CHARM_LEGGINGS = ITEMS.register("lava_charm_leggings", () ->
             new SpellArmorItem(ModArmorMaterials.SPELL_CLOTH_ARMOR, EquipmentSlot.LEGS, new Item.Properties().tab(ModCreativeModeTab.MOD_TAB), 3, Spells.SpellList.LavaCharm, "leggings", "lava_charm_leggings"));
     public static final RegistryObject<Item> SLIDE_LEGGINGS = ITEMS.register("slide_leggings", () ->
-            new SpellArmorItem(ModArmorMaterials.SPELL_CLOTH_ARMOR, EquipmentSlot.LEGS, new Item.Properties().tab(ModCreativeModeTab.MOD_TAB), 3, Spells.SpellList.Slide, "leggings"));
+            new SpellArmorItem(ModArmorMaterials.SPELL_CLOTH_ARMOR, EquipmentSlot.LEGS, new Item.Properties().tab(ModCreativeModeTab.MOD_TAB), 3, Spells.SpellList.Slide, "leggings", "slide_leggings"));
 
     public static final RegistryObject<Item> JUMP_BOOTS = ITEMS.register("jump_boots", () ->
             new SpellArmorItem(ModArmorMaterials.SPELL_CLOTH_ARMOR, EquipmentSlot.FEET, new Item.Properties().tab(ModCreativeModeTab.MOD_TAB), 3, Spells.SpellList.PassiveJump, "box_boots", "jump_boots"));

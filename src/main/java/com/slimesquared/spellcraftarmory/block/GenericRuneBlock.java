@@ -3,7 +3,7 @@ package com.slimesquared.spellcraftarmory.block;
 import com.slimesquared.spellcraftarmory.block.entity.ModBlockEntities;
 import com.slimesquared.spellcraftarmory.block.entity.RuneBlockEntity;
 import com.slimesquared.spellcraftarmory.item.ModItems;
-import com.slimesquared.spellcraftarmory.runecapability.PlayerRunes;
+import com.slimesquared.spellcraftarmory.capability.PlayerRunes;
 import com.slimesquared.spellcraftarmory.util.RuneSpells;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

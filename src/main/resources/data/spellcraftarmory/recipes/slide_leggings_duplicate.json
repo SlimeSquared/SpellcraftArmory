@@ -1,0 +1,19 @@
+{
+  "type": "spellcraftarmory:sewing",
+  "ingredients": [
+    {
+      "item": "minecraft:prismarine_shard",
+      "count": 16
+    },
+    {
+      "item": "spellcraftarmory:spell_cloth",
+      "count": 7
+    },
+    {
+      "item": "spellcraftarmory:slide_leggings"
+    }
+  ],
+  "output": {
+    "item": "spellcraftarmory:slide_leggings"
+  }
+}
