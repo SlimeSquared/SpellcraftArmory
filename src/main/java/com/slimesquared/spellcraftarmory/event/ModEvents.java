@@ -39,6 +39,7 @@ import net.minecraftforge.event.AttachCapabilitiesEvent;
 import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
 import net.minecraftforge.event.entity.living.*;
+import net.minecraftforge.event.entity.player.AttackEntityEvent;
 import net.minecraftforge.event.entity.player.PlayerEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.LogicalSide;
@@ -70,12 +71,11 @@ public class ModEvents {
         }
 
         @SubscribeEvent
-        public static void attack(LivingAttackEvent e) {
+        public static void attack(AttackEntityEvent e) {
             for(ItemStack armor : e.getEntity().getArmorSlots()) {
                 if (armor.getItem() instanceof SpellArmorItem spellArmor
                         && spellArmor.getSpell(armor) == Spells.SpellList.Bloodlust
-                        && (e.getSource().msgId.equals("player") || e.getSource().msgId.equals("mob"))
-                        && !(e.getSource() instanceof IndirectEntityDamageSource)) {
+                        && e.getEntity().getAttackStrengthScale(0.5F) > 0.9F) {
                     Utils.applyEffect(e.getEntity(), MobEffects.DAMAGE_BOOST, 30, 0, true);
                 }
             }

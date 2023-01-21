@@ -122,7 +122,7 @@ public class SpellProjectile extends Projectile {
                 var placePos = pos.relative(hitResult.getDirection(), 1);
                 for (int i = 0; i < 2; i++) {
                     if (level.getBlockState(placePos).getBlock() == Blocks.AIR) {
-                        level.setBlockAndUpdate(placePos, Blocks.GLOWSTONE.defaultBlockState());
+                        level.setBlockAndUpdate(placePos, ModBlocks.LIGHT_SPELL.get().defaultBlockState());
                         this.discard();
                     }
                 }

@@ -2,7 +2,8 @@
   "type": "spellcraftarmory:sewing",
   "ingredients": [
     {
-      "item": "minecraft:fermented_spider_eye"
+      "item": "minecraft:fermented_spider_eye",
+      "count": 8
     },
     {
       "item": "spellcraftarmory:spell_cloth",

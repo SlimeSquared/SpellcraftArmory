@@ -38,7 +38,6 @@ public class ModItems {
     // shield wave spell (push entities), dirt bomb/other terraforming, proj w/ linger pot (slow/curse),
     // vex summoner (attacks attacked), evoker jaw
     // freezing proj (place snow), remote ender chest/crafting table
-    // make tele crown not anger endermen
 
     //ToDo Runes: tele cast to block, tele on top (new chalk?, not exactly rune)
     // summoning rune?, knockback (explode), redstone pulse,
@@ -48,6 +47,7 @@ public class ModItems {
     //ToDo Models: horse, light particles
 
     //ToDo: optional: make JEI recipe transferring
+    // make chest modifiers based on random numbers?
 
     //Make sure to add recipe json, loot modifier json (+add to global loot modifier), item json+texture, armor texture, and lang file
     public static final RegistryObject<Item> PETRIFICATION_HAT = ITEMS.register("petrification_hat", () ->

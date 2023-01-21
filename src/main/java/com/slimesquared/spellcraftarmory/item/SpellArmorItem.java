@@ -12,6 +12,8 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.ai.attributes.Attribute;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.entity.monster.EnderMan;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.Level;
@@ -97,6 +99,19 @@ public class SpellArmorItem extends GeoArmorItem implements IAnimatable {
     }
 
     @Override
+    public Multimap<Attribute, AttributeModifier> getAttributeModifiers(EquipmentSlot slot, ItemStack stack) {
+        if (stack.getDamageValue() == stack.getMaxDamage() - 1) {
+            return ImmutableMultimap.of();
+        }
+        else return super.getAttributeModifiers(slot, stack);
+    }
+
+    @Override
+    public boolean isEnderMask(ItemStack stack, Player player, EnderMan endermanEntity) {
+        return stack.getItem().equals(ModItems.TELEPORT_HAT.get()) || super.isEnderMask(stack, player, endermanEntity);
+    }
+
+    @Override
     public void appendHoverText(@NotNull ItemStack stack, @Nullable Level level, @NotNull List<Component> components, @NotNull TooltipFlag tooltipFlag) {
 
         String damageText = null;
@@ -155,14 +170,6 @@ public class SpellArmorItem extends GeoArmorItem implements IAnimatable {
             return 0;
         }
         return super.damageItem(stack, amount, entity, onBroken);
-    }
-
-    @Override
-    public Multimap<Attribute, AttributeModifier> getAttributeModifiers(EquipmentSlot slot, ItemStack stack) {
-        if (stack.getDamageValue() == stack.getMaxDamage() - 1) {
-            return ImmutableMultimap.of();
-        }
-        else return super.getAttributeModifiers(slot, stack);
     }
 
     private <P extends IAnimatable> PlayState predicate(AnimationEvent<P> e) {

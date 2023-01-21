@@ -2,7 +2,8 @@
   "type": "spellcraftarmory:sewing",
   "ingredients": [
     {
-      "item": "minecraft:glistering_melon_slice"
+      "item": "minecraft:glistering_melon_slice",
+      "count": 4
     },
     {
       "item": "spellcraftarmory:spell_cloth",

@@ -43,5 +43,7 @@
 
   "effect.spellcraftarmory.curse": "Curse",
   "effect.spellcraftarmory.petrify": "Petrification",
-  "effect.spellcraftarmory.silence": "Silence"
+  "effect.spellcraftarmory.silence": "Silence",
+
+  "entity.spellcraftarmory.ghost_horse": "Ghost Horse"
 }

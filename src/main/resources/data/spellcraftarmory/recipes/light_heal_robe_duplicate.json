@@ -2,7 +2,8 @@
   "type": "spellcraftarmory:sewing",
   "ingredients": [
     {
-      "item": "minecraft:sunflower"
+      "item": "minecraft:sunflower",
+      "count": 4
     },
     {
       "item": "spellcraftarmory:spell_cloth",

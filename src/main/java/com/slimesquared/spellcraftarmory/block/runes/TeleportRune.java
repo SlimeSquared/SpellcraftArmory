@@ -32,10 +32,8 @@ public class TeleportRune extends GenericRuneBlock {
             }
             player.teleportTo(rx, ry, rz);
 
-            //ToDo: adjust for if on ceiling
-            // cull player list
-            for (var otherPlayer: player.level.players()) {
-                if (otherPlayer instanceof ServerPlayer) {
+            for (var otherPlayer : player.level.players()) {
+                if (otherPlayer instanceof ServerPlayer && (otherPlayer.distanceTo(player) < 50 || otherPlayer.distanceToSqr(startPos) < 2500)) {
                     var vec = new Vec3(rx, ry, rz).subtract(startPos).scale(0.1);
                     if (vec.length() > 1) {
                         vec = vec.normalize();

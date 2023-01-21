@@ -48,14 +48,16 @@ public class GhostHorse extends AbstractHorse {
     @Override
     public LivingEntity getControllingPassenger() {
         var rider = super.getControllingPassenger();
+        var flag = false;
         if (rider instanceof Player player) {
             for (var armor : player.getArmorSlots()) {
                 if (armor.getItem() instanceof SpellArmorItem spellArmor && spellArmor.getSpell(armor) == Spells.SpellList.HorseSummon) {
+                    flag = true;
                     this.ticksUnridden = 0;
                 }
             }
         }
-        else {
+        if (!flag) {
             this.ticksUnridden++;
             if (this.ticksUnridden > 600) {
                 this.kill();

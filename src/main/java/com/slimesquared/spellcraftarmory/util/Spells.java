@@ -104,10 +104,10 @@ public class Spells {
             case HorseSummon -> {
                 GhostHorse horse = new GhostHorse(entity);
                 horse.setPos(entity.position().add(entity.getViewVector(1).x * 1.5, 0, entity.getViewVector(1).z * 1.5));
-                if (entity.level.noCollision(horse)) {
+                if (!entity.level.noCollision(horse)) {
                     horse.setPos(horse.position().add(0, 1, 0));
                 }
-                if (entity.level.noCollision(horse)) {
+                if (!entity.level.noCollision(horse)) {
                     horse.remove(Entity.RemovalReason.DISCARDED);
                     return 0;
                 }
